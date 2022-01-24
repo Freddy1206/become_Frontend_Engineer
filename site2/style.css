@@ -1,3 +1,54 @@
-*{
-    box-sizing: border-box;
+*{box-sizing: border-box;}
+
+body{
+    background: lightgray;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
 }
+
+h1{
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px black ;
+    
+}
+
+p{
+    font-style: italic;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    color: royalblue;
+}
+
+a:hover{
+    color: red;
+}
+
+a:active{
+    color: springgreen;
+}
+
+ol{
+    list-style: lower-alpha outside url("../images/favicon.ico");
+
+}
+
+th,td{
+    border: 1px solid black;
+    padding: 2px;
+    text-align: center;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+div.div1{overflow: auto; margin-top: 10px;}
+
+th{background-color: chartreuse;}
+
+tr:nth-child(even){background-color: gray;}
