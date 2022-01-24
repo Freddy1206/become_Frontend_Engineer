@@ -1,54 +1,83 @@
-*{box-sizing: border-box;}
-
-body{
-    background: lightgray;
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 5px;
+*{
+    box-sizing: border-box;
 }
 
-h1{
-    color: whitesmoke;
-    text-shadow: 2px 2px 4px black ;
+body{
+    margin :0;
+}
+
+ul.nav{
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 25%;
+    overflow: auto;
+    position: fixed;
+    top : 0;
     
 }
 
-p{
-    font-style: italic;
-    font-weight: bold;
-    font-variant: small-caps;
+ul.nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    width: 25%;
+    overflow: auto;
+    position:fixed;
+    height: 100%;
 }
 
-a:link, a:visited{
+ul.nav li a{
     text-decoration: none;
-    color: royalblue;
-}
-
-a:hover{
-    color: red;
-}
-
-a:active{
-    color: springgreen;
-}
-
-ol{
-    list-style: lower-alpha outside url("../images/favicon.ico");
-
-}
-
-th,td{
-    border: 1px solid black;
-    padding: 2px;
+    padding: 8px 16px;
     text-align: center;
+    display: block;
+    color: black;
+
 }
 
-table{
-    border-collapse: collapse;
+
+ul.nav li a.active{
+    background-color: #4CAF50;
+    color: white;
 }
 
-div.div1{overflow: auto; margin-top: 10px;}
+ul.nav li a:hover:not(.active){
+    background-color: black;
+    color: white;
+}
 
-th{background-color: chartreuse;}
+div.isi{
 
-tr:nth-child(even){background-color: gray;}
+    margin-left: 25%;
+    padding: 10px;
+}
+
+h2{
+    margin: 0;
+}
+
+@media screen and (max-width: 900px) {
+    ul.nav{
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    ul.nav li a{
+        float: left;
+        padding: 15px;
+    }
+    div.isi{
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    ul.nav li a{
+        float:none;
+    }
+
+}
