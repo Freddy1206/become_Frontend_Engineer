@@ -2,7 +2,7 @@
 <html lang="en-US"> 
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-witdth, inital-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="keywords" content="sistem, navigasi">
         <meta name="description" content="membuat halaman navigasi">
         <meta name="author" content="Freddy Michael">
@@ -13,21 +13,20 @@
         <style src="myscript.js"></style>
     </head>
     <body>
-        
-            <ul class="nav">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-        
-        <div class= "isi">
-            <h2>Responsive Sidenav Example</h2>
-            <p>This example use media queries to transform the sidenav to a top navigation bar when the screen size is 900px or less.</p>
-            <p>We have also added a media query for screens that are 400px or less, which will vertically stack and center the navigation links.</p>
-            <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
-            <h3>Resize the browser window to see the effect</h3>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#home">News</a></li>
+            <li class="dropdown"><a href="javacript:void(0)" class="dropbtn">Dropdown</a>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </li>
+        </ul>
+        <div class="isi">
+            <h3>Dropdown Menu inside a Navigation Bar</h3>
+            <p>Hover over the "Dropdown" link to see the dropdown menu.</p>
         </div>
-
     </body>
 </html>
